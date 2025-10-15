@@ -5,7 +5,8 @@ public class PasswordValidator {
     private static final String WRONG_PASSWORD_MESSAGE =
             "Wrong passwords";
 
-    public void validate(String password, String repeatPassword) throws PasswordValidationException {
+    public void validate(String password, String repeatPassword)
+            throws PasswordValidationException {
         if (password == null
                 || repeatPassword == null
                 || !password.equals(repeatPassword)
