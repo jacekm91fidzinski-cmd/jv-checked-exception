@@ -10,7 +10,6 @@ public class PasswordValidator {
                 || !password.equals(repeatPassword)
                 || password.length() < MIN_PASSWORD_LENGTH) {
             throw new PasswordValidationException(WRONG_PASSWORD_MESSAGE);
-
         }
     }
 }
